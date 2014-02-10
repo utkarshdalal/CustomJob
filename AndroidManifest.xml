@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs160.customjob"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="commons.LoginActivity"
+            android:label="CustomJob"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="commons.RegisterActivity"
+            android:label="Register New Account" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ListingsActivity"
+            android:label=""
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="buyer.post.NewCJActivity"
+            android:label="New Custom Job"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerListingsActivity"
+            android:label="@string/title_activity_seller_listings" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerListingsFragment"
+            android:label="@string/title_activity_seller_listings_fragment" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerListingsAdapter"
+            android:label="@string/title_activity_seller_listings_adapter" >
+        </activity>
+        <activity
+            android:name="seller.bid.SellerViewCJActivity"
+            android:label="@string/title_activity_seller_view_cj" >
+        </activity>
+        <activity
+            android:name="seller.bid.SellerViewBidsActivity"
+            android:label="@string/title_activity_seller_view_bids" >
+        </activity>
+        <activity
+            android:name="seller.bid.SellerPlaceBidActivity"
+            android:label="@string/title_activity_seller_place_bid" >
+        </activity>
+        <activity
+            android:name="seller.bid.SellerViewBidsAdapter"
+            android:label="@string/title_activity_seller_view_bids_adapter" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerMyBidsFragment"
+            android:label="@string/title_activity_seller_my_bids_fragment" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerMyBidsAdapter"
+            android:label="@string/title_activity_seller_my_bids_adapter" >
+        </activity>
+        <activity
+            android:name="commons.chat.ChatActivity"
+            android:label="CustomJob"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="commons.chat.MessageService" >
+            <intent-filter>
+                <action android:name="com.cs160.customjob.commons.chat.UPDATE_MESSAGES" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="seller.bid.SellerViewBidDetailsActivity"
+            android:label="@string/title_activity_seller_view_bid_details" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ViewAcceptedJobActivity"
+            android:label="@string/title_activity_view_accepted_job" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ViewPendingJobActivity"
+            android:label="@string/title_activity_buyer_view_pending_job" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ViewBidsActivity"
+            android:label="@string/title_activity_view_bids" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ViewBidsAdapter"
+            android:label="@string/title_activity_view_bids_adapter" >
+        </activity>
+        <activity
+            android:name="buyer.listings.ViewBidDetailsActivity"
+            android:label="@string/title_activity_view_bid_details" >
+        </activity>
+        <activity
+            android:name="buyer.listings.AcceptedListingsAdapter"
+            android:label="@string/title_activity_accepted_listings_adapter" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerMyOrdersFragment"
+            android:label="@string/title_activity_seller_my_orders_fragment" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerMyOrdersAdapter"
+            android:label="@string/title_activity_seller_my_orders_adapter" >
+        </activity>
+        <activity
+            android:name="seller.listings.SellerViewOrderDetailsActivity"
+            android:label="@string/title_activity_seller_view_order_details" >
+        </activity>
+    </application>
+
+</manifest>

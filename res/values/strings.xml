@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomJob</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_listings">ListingsActivity</string>
+    <string name="title_activity_seller_listings">SellerListingsActivity</string>
+    <string name="title_activity_seller_listings_fragment">SellerListingsFragment</string>
+    <string name="title_activity_seller_listings_adapter">SellerListingsAdapter</string>
+    <string name="title_activity_seller_view_cj">SellerViewCJActivity</string>
+    <string name="title_activity_seller_view_bids">SellerViewBidsActivity</string>
+    <string name="title_activity_seller_place_bid">SellerPlaceBidActivity</string>
+    <string name="title_activity_seller_view_bids_adapter">SellerViewBidsAdapter</string>
+    <string name="title_activity_seller_my_bids_fragment">SellerMyBidsFragment</string>
+    <string name="title_activity_seller_my_bids_adapter">SellerMyBidsAdapter</string>
+    <string name="title_activity_seller_view_bid_details">SellerViewBidDetailsActivity</string>
+    <string name="title_activity_view_accepted_job">ViewAcceptedJobActivity</string>
+    <string name="title_activity_buyer_view_pending_job">BuyerViewPendingJob</string>
+    <string name="title_activity_view_bids">ViewBidsActivity</string>
+    <string name="title_activity_view_bids_adapter">ViewBidsAdapter</string>
+    <string name="title_activity_view_bid_details">ViewBidDetailsActivity</string>
+    <string name="title_activity_accepted_listings_adapter">AcceptedListingsAdapter</string>
+    <string name="title_activity_seller_my_orders_fragment">SellerMyOrdersFragment</string>
+    <string name="title_activity_seller_my_orders_adapter">SellerMyOrdersAdapter</string>
+    <string name="title_activity_seller_view_order_details">SellerViewOrderDetailsActivity</string>
+
+</resources>

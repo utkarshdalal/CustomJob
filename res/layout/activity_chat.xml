@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/black_button"
+        android:text="Back"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:text="Chat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+
+    </ListView>
+
+               <RelativeLayout
+                   android:id="@+id/messageInputBackground"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginBottom="12dp"
+                   android:layout_marginLeft="60dp"
+                   android:layout_marginRight="60dp"
+                   android:background="@drawable/gradient_background" >
+
+                   <EditText
+                       android:id="@+id/editTextMessage"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentTop="true"
+                       android:background="@android:color/transparent"
+                       android:ems="10"
+                       android:inputType="text"
+                       android:paddingLeft="5dp" >
+
+                       <requestFocus />
+                   </EditText>
+
+               </RelativeLayout>
+
+               <ImageButton
+                   android:id="@+id/imageButtonAttach"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/attachment_icon" />
+
+               <ImageButton
+                   android:id="@+id/imageButtonSend"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentRight="true"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/tick_icon" />
+
+</RelativeLayout>

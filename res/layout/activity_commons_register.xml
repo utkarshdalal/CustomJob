@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:ignore="TextFields,HardcodedText,UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <!-- Email Label -->
+
+            <TextView
+                android:id="@+id/displayTextEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email*"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <!-- Password Label -->
+
+            <TextView
+                android:id="@+id/displayTextPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Password*"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/displayTextFullName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name*"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number (optional)"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:hint="e.g. 123-456-7890"
+				android:inputType="number"
+				android:singleLine="true" />
+
+             <TextView
+                android:id="@+id/displayTextRequired"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="* = required"
+                android:textColor="#372c24" />
+             
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:gravity="center_horizontal"
+                 android:padding="10dip" >
+                 
+                 <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:textSize="17sp"
+                     android:text="I am: "/>
+                 
+                 <RadioGroup
+                     android:id="@+id/RegistrationUserTypeRadioButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal" >
+                 
+                 	<RadioButton 
+                    	android:id="@+id/buyerRegistrationRadioButton"
+                     	android:layout_width="wrap_content"
+                     	android:layout_height="wrap_content"
+                     	android:checked="true"
+                     	android:text="a customer"/>
+                 
+                 	<RadioButton 
+                     	android:id="@+id/sellerRegistrationRadioButton"
+                     	android:layout_width="wrap_content"
+                     	android:layout_height="wrap_content"
+                     	android:text="an artisan"/>
+                 	
+                 </RadioGroup>
+                 
+                 
+             </LinearLayout>
+
+             <Button
+                android:id="@+id/commons_register_buttonRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

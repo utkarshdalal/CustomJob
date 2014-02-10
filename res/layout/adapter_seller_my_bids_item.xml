@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sellerMyBidsAdapterRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText" >
+
+
+        <TextView
+            android:id="@+id/sellerMyBidsAdapterBidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="Amount"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#DDD" />
+
+        <TextView
+            android:id="@+id/sellerMyBidsAdapterBidPlacedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/sellerMyBidsAdapterBidAmount"
+            android:layout_alignParentLeft="true"
+            android:text="Bid Placed At"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#444" />
+        
+        <TextView
+            android:id="@+id/sellerMyBidsAdapterItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/sellerMyBidsAdapterBidPlacedAt"
+            android:layout_alignParentLeft="true"
+            android:text="On: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#AAA" />
+            
+</RelativeLayout>

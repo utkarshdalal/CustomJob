@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_button"
+    tools:ignore="ScrollViewSize,HardcodedText,ObsoleteLayoutParam,NestedScrolling" >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_texture" >
+        
+        <TextView
+        	android:id="@+id/buyer_newcj_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="Post New Job"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/buyer_newcj_scrollView"
+            android:layout_above="@+id/buttonPostJob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buyer_newcj_title"
+            android:layout_margin="10dp"
+            android:background="#fff" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/newCJTitleBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gradient_background" >
+
+                    <TextView
+                        android:id="@+id/textViewItemTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Title (required)"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textViewItemTitle"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/descriptionBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/newCJTitleBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gradient_background"
+                    android:columnCount="1" >
+
+                    <TextView
+                        android:id="@+id/newCJTextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Description (optional)"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/newCJEditTextDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/newCJTextView01"
+                        android:layout_below="@+id/newCJTextView01"
+                        android:layout_column="0"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:layout_row="0"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|top"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"
+                        android:paddingLeft="5dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/descriptionBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff"
+                    android:columnCount="1" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Accepting Bids Until"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/buttonSelectEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/TextView02"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/black_button"
+                        android:minHeight="30dp"
+                        android:text="Select End Date    >"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/buttonSelectEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/buttonSelectEndDate"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/black_button"
+                        android:minHeight="30dp"
+                        android:text="Select End Time    >"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/buyer_newcj_add_attachments_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/RelativeLayout01"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#efefef"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/buyer_newcj_add_attachments_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp" >
+
+                        <TextView
+                            android:id="@+id/TextView03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:text="Add: "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#666"
+                            android:textSize="20sp" />
+
+                        <ImageButton
+                            android:id="@+id/buyer_newcj_buttonAddPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/TextView03"
+                            android:layout_alignTop="@+id/TextView03"
+                            android:layout_marginLeft="11dp"
+                            android:minHeight="40dp"
+                            android:src="@drawable/camera"
+                            android:textColor="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/buyer_newcj_buttonAddAudio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/TextView03"
+                            android:layout_marginLeft="11dp"
+                            android:layout_toRightOf="@+id/buyer_newcj_buttonAddPhoto"
+                            android:minHeight="40dp"
+							android:src="@drawable/mic"
+                            android:textColor="#ffffff" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonPostJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/blue_button"
+            android:text="Post Job"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+<!-- Background from http://www.photos-public-domain.com/2011/04/05/light-blue-canvas-fabric-texture/ -->

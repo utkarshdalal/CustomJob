@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BuyerViewPendingJobFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_texture"
+    tools:ignore="ScrollViewSize,HardcodedText,ObsoleteLayoutParam,NestedScrolling" >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <TextView
+        	android:id="@+id/BuyerViewPendingJobActivityTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="View Job"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/BuyerViewPendingJobScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/BuyerViewPendingJobActivityTitle"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="80dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/BuyerViewPendingJobTitleBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobTextViewItemTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="5dp"
+                        android:text="Title: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/BuyerViewPendingJobTextViewItemTitle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/BuyerViewPendingJobTextViewItemTitle"
+                        android:layout_marginTop="7dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="#AAA"
+                        android:ems="10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/BuyerViewPendingJobDescriptionBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/BuyerViewPendingJobTitleBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:columnCount="1" >
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobDescriptionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="5dp"
+                        android:text="Description: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/BuyerViewPendingJobDescriptionTitle"
+                        android:layout_below="@+id/BuyerViewPendingJobDescriptionTitle"
+                        android:layout_column="0"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:layout_row="0"
+                        android:background="@android:color/transparent"
+                        android:text="None"
+                        android:textColor="#AAA"
+                        android:ems="10" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/BuyerViewPendingJobAcceptingBidsRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/BuyerViewPendingJobDescriptionBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:columnCount="1" >
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobAcceptingBidsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="5dp"
+                        android:text="Accepting Bids Until:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/BuyerViewPendingJobAcceptingBidsUntilDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/BuyerViewPendingJobAcceptingBidsTitle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/BuyerViewPendingJobAcceptingBidsTitle"
+                        android:layout_marginTop="7dp"
+                        android:textColor="#AAA" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/BuyerViewPendingJobAttachmentsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/BuyerViewPendingJobAcceptingBidsRelativeLayout"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+                    
+                    <TextView
+                            android:id="@+id/BuyerViewPendingJobAttachmentsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="5dp"
+                            android:text="Attachments: "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#666"
+                            android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/BuyerViewPendingJobAttachmentsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#efefef"
+                        android:paddingBottom="10dp" >                        
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/BuyerViewPendingJobViewBidsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/yellow_button"
+            android:text="View Bids"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+<!-- Background from http://www.photos-public-domain.com/2011/04/05/light-blue-canvas-fabric-texture/ -->

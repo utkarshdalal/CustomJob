@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,UselessParent,ContentDescription" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="20dp"
+        android:background="#dddddd"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textViewAttachmentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/imageViewIcon"
+            android:text="Image Attachment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0b84aa"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/blue_texture"
+    tools:context=".ViewBidsActivity" >
+
+    
+    <TextView
+            android:id="@+id/ViewBidsNoBids"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_texture"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="No Bids"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        	android:id="@+id/view_bids_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="View Bids"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/ViewBidsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_bids_title"
+        android:layout_margin="10dp"
+        android:background="#fff" >
+
+    </ListView>
+
+
+</RelativeLayout>
+
+<!-- Background from http://www.photos-public-domain.com/2011/04/05/light-blue-canvas-fabric-texture/ -->

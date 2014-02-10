@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sellerPlaceBidFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewSize,HardcodedText,ObsoleteLayoutParam,NestedScrolling" >
+
+    <RelativeLayout
+        android:id="@+id/sellerPlaceBidContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_texture" >
+        
+        <TextView
+        	android:id="@+id/seller_place_bid_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="Place Bid"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/sellerPlaceBidScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/seller_place_bid_title"
+            android:layout_above="@+id/sellerPlaceBidPlaceBidButton"
+            android:background="#fff"
+            android:layout_margin="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/sellerPlaceBidValueBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/sellerPlaceBidValueTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Value: $"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/sellerPlaceBidValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sellerPlaceBidValueTitle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/sellerPlaceBidValueTitle"
+                        android:background="@drawable/gradient_background"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp" >
+
+                        <requestFocus />
+
+                    </EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sellerPlaceBidDescriptionBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/sellerPlaceBidValueBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:columnCount="1" >
+
+                    <TextView
+                        android:id="@+id/sellerPlaceBidDescriptionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="5dp"
+                        android:text="Details: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#666"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/sellerPlaceBidDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/sellerPlaceBidDescriptionTitle"
+                        android:layout_below="@+id/sellerPlaceBidDescriptionTitle"
+                        android:layout_column="0"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:layout_row="0"
+                        android:background="@drawable/gradient_background"
+                        android:ems="10"
+                        android:gravity="center_vertical|top"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"
+                        android:paddingLeft="5dp" >
+                    </EditText>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/sellerPlaceBidPlaceBidButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/green_button"
+            android:text="Place Bid!"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+<!-- Background from http://www.photos-public-domain.com/2011/04/05/light-blue-canvas-fabric-texture/ -->

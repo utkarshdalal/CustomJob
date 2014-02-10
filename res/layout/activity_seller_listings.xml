@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_texture"
+    tools:ignore="HardcodedText" >
+
+    <Button
+        android:id="@+id/backButtonListingsScreen"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/black_button"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backButtonListingsScreen"
+        android:layout_alignBottom="@+id/backButtonListingsScreen"
+        android:layout_centerHorizontal="true"
+        android:text="Custom Jobs"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewItemTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" >
+
+        <FrameLayout
+            android:id="@+id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@android:id/tabhost" />
+    </android.support.v4.app.FragmentTabHost>
+    
+</RelativeLayout>
+
+<!-- Background from http://www.photos-public-domain.com/2011/04/05/light-blue-canvas-fabric-texture/ -->
